@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <title>Home Page</title>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+  <meta name="keywords" content="code sharing for cheating in lab ,chm college project of web development , lawadasuram , brocode.epizy .com">
+  <meta name="Description" content=" brocode is a website for sharing codes and notes. anyone can access your uploaded code and download it very simply. ">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style type="text/css">
+*{
+  margin:0; padding: 0;box-sizing: border-box ;
+  font-family:Georgia, Times, Times New Roman, serif;
+  color: #fff;
+}
+
+body{
+  background-image: url(bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration:none;
+}
+nav{
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+nav p{
+  color: #fff;
+  font-size: 29px;
+  line-height: 55px;
+  margin-top: 9px;
+  float: left;
+  padding: 0px 20px;
+}
+nav ul{
+  float: left;
+}
+nav ul li{
+  float: left;
+  list-style: none;
+  position: relative;
+
+}
+img{
+  filter: invert(100%);
+  height: 25px;
+}
+
+nav ul li a{
+  display: inline-block;
+  color: #fff;
+  margin-top: 5px;
+  font-size: 20px;
+  padding:10px 14px ;
+  text-decoration: none;
+}
+.vid{
+    font-size:17px;
+}
+nav ul li ul{
+    margin-top: 5px;
+  display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.8);
+
+    padding: 5px 5px;
+    border-radius: 0px 0px 4px 4px;
+}
+nav ul li:hover ul{
+  display: block;
+position:fixed;
+}
+
+nav ul li ul li {
+  width: 180px;
+  border-radius: 4px;
+
+}
+nav ul li ul li img{
+  padding-bottom: 5px;
+}
+
+nav ul li ul li a{
+  padding: 8px 14px;
+
+}
+/*nav ul li ul li a:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}*/
+
+main{
+  width: 100%;
+  height: 85vh;
+ 
+  justify-content: safe center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+}
+
+section h1{
+  margin: 50px 0 30px 0;
+  font-size: 35px; font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+
+}
+.iconn{
+  height:35px;
+  margin:0px 5px 9px;
+}
+section a{
+  padding: 12px 300px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  
+}
+section a:hover{
+  color: #4B0150;
+}
+section .btn1{
+  background: #fff;
+  color: #000;
+}
+section .btn2{
+  background: #fff;
+  color: #000;
+}
+section .btn3{
+  background: #fff;
+  color: #000;
+}
+section .btn4{
+  background: #fff;
+  color: #000;
+}
+section .btn5{
+  background: #fff;
+  color: #000;
+}
+section .btn6{
+  background: #fff;
+  color: #000;
+}
+
+section button{
+ position: relative;
+  display:inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  
+  color: #000;
+  transition: all ease 0.3s;
+  border: none;
+   height: 45px;
+  width: 240px;
+  
+}
+/*.bt1{
+    background: url(https://hips.hearstapps.com/esq.h-cdn.co/assets/16/24/480x240/landscape-1466350027-kermit.gif?resize=640:*);
+    background-size:200px 170px;
+   
+}*/
+section button::after{
+  position: absolute;
+  top: 20%;
+  right: 0.3em;
+  content:">>";
+  transition: all ease 0.3s;
+  opacity: 0;
+
+}
+section button:hover{
+  padding: 10px 48px 10px 10px;
+  color: #4B0150;
+  
+}
+section button:hover::after{
+  right: 1.2em;
+  opacity: 1;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;height: auto;
+ 
+  padding: 10px 0px 0px 0px;
+  color: #fff;
+  margin-bottom: 5px;
+
+}
+
+footer .socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: safe center;
+  margin: 1rem 0 1rem 0;
+}
+footer .socials li{
+  margin: 1px 10px;
+}
+
+footer .socials a{
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 1px 0px 0px 0px ;
+}
+
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  transform: translateY(-5px);
+  color: aqua;
+}
+/*marquee{
+  font-size: 30px;
+}*/
+
+.footer-bottom{
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  padding-top:5px;
+
+  text-transform: capitalize;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+@media(max-width: 600px) 
+{
+  *{
+  margin:0; padding: 0;box-sizing: border-box ;
+  font-family: 'Comic Neue', cursive;
+  color: rgb(254, 253, 253);
+}
+  body{
+  background-image: url(https://i.pinimg.com/originals/ba/2b/e1/ba2be18dd28516a8a813b256dcf4fec2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-decoration:none;
+}
+nav{
+  width: 100%;
+  height: 110px;
+  
+  background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flow-root;
+    justify-content: center;
+}
+nav p{
+  color: #fff;
+  margin-top: 10px;
+  margin-right: auto;
+  font-size: 30px;
+  line-height: 20px;
+   display:flex;
+  justify-content:center;
+  text-align: center;
+  padding: 0px 5px;
+}
+nav ul{
+  float: left;
+  
+}
+nav ul li{
+    
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 15px;
+ 
+  list-style: none;
+  position: relative;
+
+}
+img{
+  filter: invert(100%);
+  height: 20px;
+}
+
+nav ul li a{
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  
+  padding:1px 1px ;
+  text-decoration: none;
+}
+
+nav ul li ul{
+  color:black;
+  display: flexbox;
+  font-size: 5px;
+  position: absolute;
+  background-color: rgba(8, 0, 0,0.8);
+  padding:0px 0px 15px 1px;
+  border-radius: 10px 10px 10px 10px;
+ 
+}
+nav ul li:hover ul{
+  display: block;
+
+}
+
+nav ul li ul li {
+  margin-top: 3px;
+  width: 196px;
+  border-radius:40px 40px;
+
+}
+nav ul li ul li img{
+  padding-bottom: 0px;
+}
+
+nav ul li ul li a{
+  padding: 2px 4px;
+
+}
+
+section h1{
+  margin: 25px 0 30px 0;
+  font-size: 28px; font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+
+}
+section button{
+  position: relative;
+  display: flow-root;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background: #fff;
+  height: 45px;
+  width: 240px;
+  
+  color: #000;
+ 
+  transition: all ease 0.3s;
+  border: none;
+}
+section button::after{
+  position: absolute;
+  top: 20%;
+  right: 0.6em;
+  content: url(pointing1.png);
+  transition: all ease 0.3s;
+  opacity: 0;
+transform:scaleX(-1);
+}
+}
+</style>
+
+</head>
+<body>
+   <nav>
+       <p>BroCode<img src="https://cutewallpaper.org/24/black-and-white-smiley-emoji/best-black-and-white-smiley-face-10736-clipartioncom.jpeg"></p>
+       <ul>
+           <li><a href="index.php"><i class="fa-solid fa-house-user"></i>  Home</a></li>
+           <li><a href="#"><img src="https://icon-library.com/images/upload-icon/upload-icon-15.jpg"/>Upload</a>
+              <ul> 
+                <li><a class="vid" href="upload.php"><img src="https://www.citypng.com/public/uploads/preview/video-cinema-clap-black-icon-png-image-116369418202xludnkued.png"/>video Templates</a></li>
+                 <li><a href="upload1.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png"/>images</a></li>
+                <li><a href="upload2.php"><img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png"/>Memes <!--<span class="badge bg-secondary" style="height:5px;" disabled>upcoming</span>-->
+  </span></a></li>
+              </ul> 
+            </li>
+           <li><!-- Button trigger modal -->
+<button type="button" class="fa-solid fa-user" style = "color: #fff; margin-top: 15px; margin-right: 9px; font-size: 18px; background-color:white; color:black; border:2px solid grey; padding:2px 2px 2px 2px" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <pre class="not" disabled> login page is not avalible at a time</pre> 
+      <style>
+      pre{
+          color:red;
+      }
+      </style>
+<!--      <label for="uname"><b>Username</b></label>-->
+<!--      <input type="text" placeholder="Enter Username" name="uname" required>-->
+
+<!--      <label for="psw"><b>Password</b></label>-->
+<!--      <input type="password" placeholder="Enter Password" name="psw" required>-->
+        
+      <button class="reme" type="submit">Login</button>
+    
+    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" style="color:white; background-color:black;" class="btn" disabled>Save changes</button>
+      </div>
+    </div>
+  </div>
+  <style>
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.reme{
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+</style>
+</div></li>
+
+   </ul></nav>
+   <a target="_blank" href="https://icons8.com/icon/12646/user-menu-male"></a>
+
+    <main>
+        <section>
+          <h1>Welcome To BroCode<img class="iconn" src="https://cutewallpaper.org/24/black-and-white-smiley-emoji/best-black-and-white-smiley-face-10736-clipartioncom.jpeg"><h6 disabled>(select category) <img id="point"  src="https://i.pinimg.com/originals/5e/2c/2c/5e2c2c13b52b2ae170c2f9d97156f880.gif"></h6></h1>
+                    <button class="bt1" type="button" onclick="document.location='os1.html'">Video Templates</a></button>
+          <button class="bt2" type="button" onclick="document.location='LA.php'">Static Teamplates</a></button>
+            <button type="button" onclick="document.location='ds.php'">Memes</a></button>
+                    <button type="button" onclick="document.location='dbms.php'">Random shit</a></button>
+                    <!--<button type="button" onclick="document.location='jp.php'">Badass edit Teamplates</a></button>
+                    <button type="button" onclick="document.location='wt.php'">Examples and memes</a></button>-->
+
+
+                   </div></div>
+
+
+        </section>
+
+
+      <footer>
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8668222021755723"
+     crossorigin="anonymous"></script>
+
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>-->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8668222021755723"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-fb+5w+4e-db+86"
+     data-ad-client="ca-pub-8668222021755723"
+     data-ad-slot="3267866012"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <div class="footer-bottom">
+          <p>copyright &copy;2023 BroCode designed by<span> <i class="fa-brands fa-instagram" style="opaticy:0.8;"></i> aryabhatOO </span></p>
+            <ul class="socials">
+               <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+               <li><a href="https://www.instagram.com/aryabhat00/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
+               <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+               <li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a></li>
+
+          </ul>
+          
+          <ul>
+         <a class="contact" onClick="alert('Contact me on my instagram handle @AryaBhat00')" >contact us</a>
+          <a class="contact" href="aboutus.php">about us</a>
+          </ul>
+        </div>
+        
+</div>
+         <style>
+         .contact{
+             text-decoration:none;
+             color:black;
+             background-color:white;
+               position: relative;
+  display:inline-block;
+  padding: 3px 7px;
+   height: 25px;        
+  width: 100px;
+  size:10px;
+  opacity:0.8;
+         }
+         </style>
+      </footer> 
+
+      </main>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
